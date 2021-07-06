@@ -1,0 +1,431 @@
+{
+  "contractName": "EdirCoin",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.1+commit.f4a555be\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/hp/Desktop/courses/hello_blockchain/contracts/edir.sol\":\"EdirCoin\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/hp/Desktop/courses/hello_blockchain/contracts/edir.sol\":{\"keccak256\":\"0x1a48999a9aa75b7fd86c15d5db3825adacb601a498954e579d2cd134a23bee98\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3a398edcc588a046d54d499abc5e91053be0cf3113125a5c27633ae0dfdf6234\",\"dweb:/ipfs/QmfCV7FjHTbGKW9nzxSnwgNQ5QytpL1A95xEKzcvcFuRsd\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220a9dbf4c15ecbc5cb8673e14938303fcaabb6abe828c36e4845aa4e55dd5ae71864736f6c63430007010033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220a9dbf4c15ecbc5cb8673e14938303fcaabb6abe828c36e4845aa4e55dd5ae71864736f6c63430007010033",
+  "immutableReferences": {},
+  "sourceMap": "59:189:0:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "59:189:0:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity 0.7.1;\r\n\r\ncontract EdirCoin{\r\n\r\n    struct member{\r\n        string name;\r\n        string title;\r\n    }\r\n\r\n    mapping (address=>uint) balance;\r\n    mapping (address=>member) members;\r\n\r\n    \r\n\r\n\r\n\r\n}",
+  "sourcePath": "C:/Users/hp/Desktop/courses/hello_blockchain/contracts/edir.sol",
+  "ast": {
+    "absolutePath": "/C/Users/hp/Desktop/courses/hello_blockchain/contracts/edir.sol",
+    "exportedSymbols": {
+      "EdirCoin": [
+        15
+      ]
+    },
+    "id": 16,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "0.7",
+          ".1"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 15,
+        "linearizedBaseContracts": [
+          15
+        ],
+        "name": "EdirCoin",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "EdirCoin.member",
+            "id": 6,
+            "members": [
+              {
+                "constant": false,
+                "id": 3,
+                "mutability": "mutable",
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 6,
+                "src": "109:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 2,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "109:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5,
+                "mutability": "mutable",
+                "name": "title",
+                "nodeType": "VariableDeclaration",
+                "scope": 6,
+                "src": "131:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 4,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "131:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "member",
+            "nodeType": "StructDefinition",
+            "scope": 15,
+            "src": "85:66:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 10,
+            "mutability": "mutable",
+            "name": "balance",
+            "nodeType": "VariableDeclaration",
+            "scope": 15,
+            "src": "159:31:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 9,
+              "keyType": {
+                "id": 7,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "168:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "159:23:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 8,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "177:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 14,
+            "mutability": "mutable",
+            "name": "members",
+            "nodeType": "VariableDeclaration",
+            "scope": 15,
+            "src": "197:33:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_member_$6_storage_$",
+              "typeString": "mapping(address => struct EdirCoin.member)"
+            },
+            "typeName": {
+              "id": 13,
+              "keyType": {
+                "id": 11,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "206:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "197:25:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_member_$6_storage_$",
+                "typeString": "mapping(address => struct EdirCoin.member)"
+              },
+              "valueType": {
+                "id": 12,
+                "name": "member",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 6,
+                "src": "215:6:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_member_$6_storage_ptr",
+                  "typeString": "struct EdirCoin.member"
+                }
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 16,
+        "src": "59:189:0"
+      }
+    ],
+    "src": "33:215:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/C/Users/hp/Desktop/courses/hello_blockchain/contracts/edir.sol",
+      "exportedSymbols": {
+        "EdirCoin": [
+          15
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.7",
+            ".1"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "33:22:0"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            15
+          ],
+          "name": "EdirCoin",
+          "scope": 16
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "EdirCoin.member",
+              "name": "member",
+              "scope": 15,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "scope": 6,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 2,
+                    "name": "ElementaryTypeName",
+                    "src": "109:6:0"
+                  }
+                ],
+                "id": 3,
+                "name": "VariableDeclaration",
+                "src": "109:11:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "title",
+                  "scope": 6,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 4,
+                    "name": "ElementaryTypeName",
+                    "src": "131:6:0"
+                  }
+                ],
+                "id": 5,
+                "name": "VariableDeclaration",
+                "src": "131:12:0"
+              }
+            ],
+            "id": 6,
+            "name": "StructDefinition",
+            "src": "85:66:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "balance",
+              "scope": 15,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(address => uint256)",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(address => uint256)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 7,
+                    "name": "ElementaryTypeName",
+                    "src": "168:7:0"
+                  },
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 8,
+                    "name": "ElementaryTypeName",
+                    "src": "177:4:0"
+                  }
+                ],
+                "id": 9,
+                "name": "Mapping",
+                "src": "159:23:0"
+              }
+            ],
+            "id": 10,
+            "name": "VariableDeclaration",
+            "src": "159:31:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "members",
+              "scope": 15,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(address => struct EdirCoin.member)",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(address => struct EdirCoin.member)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 11,
+                    "name": "ElementaryTypeName",
+                    "src": "206:7:0"
+                  },
+                  {
+                    "attributes": {
+                      "name": "member",
+                      "referencedDeclaration": 6,
+                      "type": "struct EdirCoin.member"
+                    },
+                    "id": 12,
+                    "name": "UserDefinedTypeName",
+                    "src": "215:6:0"
+                  }
+                ],
+                "id": 13,
+                "name": "Mapping",
+                "src": "197:25:0"
+              }
+            ],
+            "id": 14,
+            "name": "VariableDeclaration",
+            "src": "197:33:0"
+          }
+        ],
+        "id": 15,
+        "name": "ContractDefinition",
+        "src": "59:189:0"
+      }
+    ],
+    "id": 16,
+    "name": "SourceUnit",
+    "src": "33:215:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.1+commit.f4a555be.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-07-05T08:28:20.904Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
