@@ -8,13 +8,16 @@ const Hello= require('./build/contracts/Hello.json')
 
 const init = async ()=>{
 
-    const web3 = new Web3('http://localhost:8545');
+    const web3 = new Web3('http://127.0.0.1:9545');
     const id =await web3.eth.net.getId();
     const deployedNetwork = Hello.networks[id];
-    const contract = new web3.eth.Contract(Hello.abi,
-        deployedNetwork.address);
-   const result = await contract.methods.getGreeting().call()
-   console.log(result);
+    const addresses = await web3.eth.getAccounts();
+    const contract = new web3.eth.Contract(Hello.abi,deployedNetwork.address);
+    const receit = await contract.methods.setGreeting("cant beleive it worked").send({from:addresses[0]});
+    const result = await contract.methods.getGreeting().call();
+    console.log(result);
+    // console.log(result);
+
 }
 
 init()
