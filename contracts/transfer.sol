@@ -2,13 +2,13 @@
 pragma solidity 0.7.1;
 
 contract Transfer{
-   string public funcCalled = "empty";
+   string public funcCalled = "10";
 
     function sendEther() external payable{
-         funcCalled="ether sent";
+         funcCalled="15";
     }
 
     fallback() external payable{
-        funcCalled="fallback called";
+         funcCalled="1";
     }
 }
