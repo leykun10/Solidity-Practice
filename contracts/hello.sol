@@ -8,7 +8,7 @@ contract Hello{
 
    constructor()
    {
-       greeting='hello';
+       greeting='hey';
    }
 
     
