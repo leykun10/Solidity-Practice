@@ -1,0 +1,600 @@
+{
+  "contractName": "Trial",
+  "abi": [
+    {
+      "stateMutability": "payable",
+      "type": "fallback",
+      "payable": true
+    },
+    {
+      "inputs": [],
+      "name": "funcCalled",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [],
+      "name": "sendEther",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function",
+      "payable": true
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.1+commit.f4a555be\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"stateMutability\":\"payable\",\"type\":\"fallback\"},{\"inputs\":[],\"name\":\"funcCalled\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"sendEther\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/hp/Desktop/courses/hello_blockchain/contracts/trial.sol\":\"Trial\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/hp/Desktop/courses/hello_blockchain/contracts/trial.sol\":{\"keccak256\":\"0x5794f428a3b2f5e957715c7c1465d50acfc83cd1fabc2e0eaa1d8d6b7b563a94\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://90278d8b919180266d416d5818f739429ab16e50353571f1a2ac27287e4d9602\",\"dweb:/ipfs/QmRpsHNwXK2GzvaMcSzH25hTw8whH94NRg5kgpn8FFZ26K\"]}},\"version\":1}",
+  "bytecode": "0x60806040526040518060400160405280600281526020017f31300000000000000000000000000000000000000000000000000000000000008152506000908051906020019061004f929190610062565b5034801561005c57600080fd5b506100ff565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100a357805160ff19168380011785556100d1565b828001600101855582156100d1579182015b828111156100d05782518255916020019190600101906100b5565b5b5090506100de91906100e2565b5090565b5b808211156100fb5760008160009055506001016100e3565b5090565b6102f28061010e6000396000f3fe60806040526004361061004a576000357c0100000000000000000000000000000000000000000000000000000000900480630e29df2214610099578063637b887b146100a35761004b565b5b6040518060400160405280600181526020017f31000000000000000000000000000000000000000000000000000000000000008152506000908051906020019061009692919061021f565b50005b6100a1610133565b005b3480156100af57600080fd5b506100b8610181565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100f85780820151818401526020810190506100dd565b50505050905090810190601f1680156101255780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6040518060400160405280600281526020017f31350000000000000000000000000000000000000000000000000000000000008152506000908051906020019061017e92919061021f565b50565b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102175780601f106101ec57610100808354040283529160200191610217565b820191906000526020600020905b8154815290600101906020018083116101fa57829003601f168201915b505050505081565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061026057805160ff191683800117855561028e565b8280016001018555821561028e579182015b8281111561028d578251825591602001919060010190610272565b5b50905061029b919061029f565b5090565b5b808211156102b85760008160009055506001016102a0565b509056fea2646970667358221220f0acfdb33531c5580305ec4b6cdcffa4c94bb0d332d43d7deea77ee06e6e4de764736f6c63430007010033",
+  "deployedBytecode": "0x60806040526004361061004a576000357c0100000000000000000000000000000000000000000000000000000000900480630e29df2214610099578063637b887b146100a35761004b565b5b6040518060400160405280600181526020017f31000000000000000000000000000000000000000000000000000000000000008152506000908051906020019061009692919061021f565b50005b6100a1610133565b005b3480156100af57600080fd5b506100b8610181565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100f85780820151818401526020810190506100dd565b50505050905090810190601f1680156101255780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6040518060400160405280600281526020017f31350000000000000000000000000000000000000000000000000000000000008152506000908051906020019061017e92919061021f565b50565b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102175780601f106101ec57610100808354040283529160200191610217565b820191906000526020600020905b8154815290600101906020018083116101fa57829003601f168201915b505050505081565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061026057805160ff191683800117855561028e565b8280016001018555821561028e579182015b8281111561028d578251825591602001919060010190610272565b5b50905061029b919061029f565b5090565b5b808211156102b85760008160009055506001016102a0565b509056fea2646970667358221220f0acfdb33531c5580305ec4b6cdcffa4c94bb0d332d43d7deea77ee06e6e4de764736f6c63430007010033",
+  "immutableReferences": {},
+  "sourceMap": "59:204:1:-:0;;;79:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;59:204;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "59:204:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;238:14;;;;;;;;;;;;;;;;;:10;:14;;;;;;;;;;;;:::i;:::-;;59:204;119:72;;;:::i;:::-;;79:31;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;119:72;168:15;;;;;;;;;;;;;;;;;:10;:15;;;;;;;;;;;;:::i;:::-;;119:72::o;79:31::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;-1:-1:-1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity 0.7.1;\r\n\r\ncontract Trial{\r\n   string public funcCalled = \"10\";\r\n\r\n    function sendEther() external payable{\r\n         funcCalled=\"15\";\r\n    }\r\n\r\n    fallback() external payable{\r\n         funcCalled=\"1\";\r\n    }\r\n}\r\n",
+  "sourcePath": "C:/Users/hp/Desktop/courses/hello_blockchain/contracts/trial.sol",
+  "ast": {
+    "absolutePath": "/C/Users/hp/Desktop/courses/hello_blockchain/contracts/trial.sol",
+    "exportedSymbols": {
+      "Trial": [
+        43
+      ]
+    },
+    "id": 44,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 23,
+        "literals": [
+          "solidity",
+          "0.7",
+          ".1"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 43,
+        "linearizedBaseContracts": [
+          43
+        ],
+        "name": "Trial",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "637b887b",
+            "id": 26,
+            "mutability": "mutable",
+            "name": "funcCalled",
+            "nodeType": "VariableDeclaration",
+            "scope": 43,
+            "src": "79:31:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 24,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "79:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "hexValue": "3130",
+              "id": 25,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "106:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_1a192fabce13988b84994d4296e6cdc418d55e2f1d7f942188d4040b94fc57ac",
+                "typeString": "literal_string \"10\""
+              },
+              "value": "10"
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 33,
+              "nodeType": "Block",
+              "src": "156:35:1",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 31,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 29,
+                      "name": "funcCalled",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 26,
+                      "src": "168:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "3135",
+                      "id": 30,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "179:4:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_1d3be50b2bb17407dd170f1d5da128d1def30c6b1598d6a629e79b4775265526",
+                        "typeString": "literal_string \"15\""
+                      },
+                      "value": "15"
+                    },
+                    "src": "168:15:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 32,
+                  "nodeType": "ExpressionStatement",
+                  "src": "168:15:1"
+                }
+              ]
+            },
+            "functionSelector": "0e29df22",
+            "id": 34,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "sendEther",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 27,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "137:2:1"
+            },
+            "returnParameters": {
+              "id": 28,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "156:0:1"
+            },
+            "scope": 43,
+            "src": "119:72:1",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 41,
+              "nodeType": "Block",
+              "src": "226:34:1",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 39,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 37,
+                      "name": "funcCalled",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 26,
+                      "src": "238:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "31",
+                      "id": 38,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "249:3:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_c89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc6",
+                        "typeString": "literal_string \"1\""
+                      },
+                      "value": "1"
+                    },
+                    "src": "238:14:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 40,
+                  "nodeType": "ExpressionStatement",
+                  "src": "238:14:1"
+                }
+              ]
+            },
+            "id": 42,
+            "implemented": true,
+            "kind": "fallback",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 35,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "207:2:1"
+            },
+            "returnParameters": {
+              "id": 36,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "226:0:1"
+            },
+            "scope": 43,
+            "src": "199:61:1",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 44,
+        "src": "59:204:1"
+      }
+    ],
+    "src": "33:232:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/C/Users/hp/Desktop/courses/hello_blockchain/contracts/trial.sol",
+      "exportedSymbols": {
+        "Trial": [
+          43
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.7",
+            ".1"
+          ]
+        },
+        "id": 23,
+        "name": "PragmaDirective",
+        "src": "33:22:1"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            43
+          ],
+          "name": "Trial",
+          "scope": 44
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "637b887b",
+              "mutability": "mutable",
+              "name": "funcCalled",
+              "scope": 43,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 24,
+                "name": "ElementaryTypeName",
+                "src": "79:6:1"
+              },
+              {
+                "attributes": {
+                  "hexvalue": "3130",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "token": "string",
+                  "type": "literal_string \"10\"",
+                  "value": "10"
+                },
+                "id": 25,
+                "name": "Literal",
+                "src": "106:4:1"
+              }
+            ],
+            "id": 26,
+            "name": "VariableDeclaration",
+            "src": "79:31:1"
+          },
+          {
+            "attributes": {
+              "functionSelector": "0e29df22",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "sendEther",
+              "scope": 43,
+              "stateMutability": "payable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 27,
+                "name": "ParameterList",
+                "src": "137:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 28,
+                "name": "ParameterList",
+                "src": "156:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "string storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 26,
+                              "type": "string storage ref",
+                              "value": "funcCalled"
+                            },
+                            "id": 29,
+                            "name": "Identifier",
+                            "src": "168:10:1"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "3135",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "token": "string",
+                              "type": "literal_string \"15\"",
+                              "value": "15"
+                            },
+                            "id": 30,
+                            "name": "Literal",
+                            "src": "179:4:1"
+                          }
+                        ],
+                        "id": 31,
+                        "name": "Assignment",
+                        "src": "168:15:1"
+                      }
+                    ],
+                    "id": 32,
+                    "name": "ExpressionStatement",
+                    "src": "168:15:1"
+                  }
+                ],
+                "id": 33,
+                "name": "Block",
+                "src": "156:35:1"
+              }
+            ],
+            "id": 34,
+            "name": "FunctionDefinition",
+            "src": "119:72:1"
+          },
+          {
+            "attributes": {
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "fallback",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 43,
+              "stateMutability": "payable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 35,
+                "name": "ParameterList",
+                "src": "207:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 36,
+                "name": "ParameterList",
+                "src": "226:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "string storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 26,
+                              "type": "string storage ref",
+                              "value": "funcCalled"
+                            },
+                            "id": 37,
+                            "name": "Identifier",
+                            "src": "238:10:1"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "31",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "token": "string",
+                              "type": "literal_string \"1\"",
+                              "value": "1"
+                            },
+                            "id": 38,
+                            "name": "Literal",
+                            "src": "249:3:1"
+                          }
+                        ],
+                        "id": 39,
+                        "name": "Assignment",
+                        "src": "238:14:1"
+                      }
+                    ],
+                    "id": 40,
+                    "name": "ExpressionStatement",
+                    "src": "238:14:1"
+                  }
+                ],
+                "id": 41,
+                "name": "Block",
+                "src": "226:34:1"
+              }
+            ],
+            "id": 42,
+            "name": "FunctionDefinition",
+            "src": "199:61:1"
+          }
+        ],
+        "id": 43,
+        "name": "ContractDefinition",
+        "src": "59:204:1"
+      }
+    ],
+    "id": 44,
+    "name": "SourceUnit",
+    "src": "33:232:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.1+commit.f4a555be.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x4200A369Fea8e9F0715A5b33731340f6f236a12F",
+      "transactionHash": "0xa376049221cdcca74a202744977a1d151abda6e1643f374ccfb4dc53ed14a12c"
+    }
+  },
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-07-12T12:40:23.386Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
